@@ -20,7 +20,7 @@ $  git clone https://github.com/dstar55/docker-hello-world-spring-boot .
 
 ##### Build Docker image
 ```
-$ docker build -t="hello-world-java" .
+$ docker build -t="spring-basic-java" .
 ```
 Maven build will be executes during creation of the docker image.
 
@@ -28,7 +28,7 @@ Maven build will be executes during creation of the docker image.
 
 ##### Run Docker Container
 ```
-$ docker run -p 8080:8080 -it --rm hello-world-java
+$ docker run -p 8080:8080 -it --rm spring-basic-java
 ```
 
 ##### Test application
@@ -39,12 +39,12 @@ $ curl localhost:8080
 
 the respone should be:
 ```
-Hello World
+Spring Basic
 ```
 
 #####  Stop Docker Container:
 ```
-docker stop `docker container ls | grep "hello-world-java:*" | awk '{ print $1 }'`
+docker stop `docker container ls | grep "spring-basic-java:*" | awk '{ print $1 }'`
 ```
 
 ## Run with docker-compose 
@@ -63,7 +63,7 @@ $ curl localhost:8080
 
 the respone should be:
 ```
-Hello World
+Spring Basic
 ```
 
 ##### Stop Docker Container:

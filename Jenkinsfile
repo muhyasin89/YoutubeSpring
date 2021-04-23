@@ -8,7 +8,7 @@ node {
     // ip address of the docker private repository(nexus)
     
     def dockerRepoUrl = "localhost:8083"
-    def dockerImageName = "hello-world-java"
+    def dockerImageName = "spring_basic"
     def dockerImageTag = "${dockerRepoUrl}/${dockerImageName}:${env.BUILD_NUMBER}"
     
     stage('Clone Repo') { // for display purposes
@@ -41,9 +41,9 @@ node {
       // build docker image
       sh "whoami"
       sh "ls -all /var/run/docker.sock"
-      sh "mv ./target/hello*.jar ./data" 
+      sh "mv ./target/spring-basic*.jar ./data" 
       
-      dockerImage = docker.build("hello-world-java")
+      dockerImage = docker.build("spring-basic")
     }
    
     stage('Deploy Docker Image'){
