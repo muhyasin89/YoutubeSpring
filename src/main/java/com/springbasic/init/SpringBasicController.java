@@ -1,15 +1,15 @@
-package com.dockerforjavadevelopers.hello;
+package com.springbasic.init;
 
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
-public class HelloController {
+public class SpringBasicController {
     
     @RequestMapping("/")
     public String index() {
-        return "Hello World\n";
+        return "Spring Basic\n";
     }
     
 }

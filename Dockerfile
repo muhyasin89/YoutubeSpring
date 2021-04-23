@@ -21,8 +21,8 @@ MAINTAINER muhyasin89@gmail.com
 EXPOSE 8080
 
 #default command
-CMD java -jar /data/spring_basic.jar
+CMD java -jar /data/spring-basic-0.1.0.jar 
 
-#copy hello world to docker image from builder image
+#copy spring basic to docker image from builder image
 
-COPY --from=maven_build /tmp/target/spring_basic0.1.0.jar /data/spring_basic0.1.0.jar
+COPY --from=maven_build /tmp/target/spring-basic-0.1.0.jar /data/spring-basic-0.1.0.jar

@@ -1,4 +1,4 @@
-package com.dockerforjavadevelopers.hello;
+package com.springbasic.init;
 
 
 import org.springframework.boot.SpringApplication;
