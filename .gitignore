@@ -3,6 +3,7 @@
 .metadata
 .gradle
 bin/
+bin.backup/
 tmp/
 *.tmp
 *.bak

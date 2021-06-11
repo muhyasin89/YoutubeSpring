@@ -9,7 +9,7 @@ public class SpringBasicController {
     
     @RequestMapping("/")
     public String index() {
-        return "Spring Basic\n";
+        return "Spring Basic Test\n";
     }
     
 }
